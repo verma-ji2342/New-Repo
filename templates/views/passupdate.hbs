@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Update Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="../css/passupdate.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+      <div class="text">
+         Update Form
+      </div>
+      <form action="/passupdate" method="post">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="email" id="gmail" name="gmail" value="" required>
+               <div class="underline"></div>
+               <label for="">Email</label>
+            </div>
+            
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="password" id="password" name="password" required>
+               <div class="underline"></div>
+               <label for="">Password</label>
+            </div>
+            <div class="input-data">
+               <input type="password" id="Cpassword" name="Cpassword" required>
+               <div class="underline"></div>
+               <label for="">Confirm Password</label>
+            </div>
+         </div>
+         
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" id="submit" value="Save">
+               </div>
+            </div>
+      </form>
+      </div>
+<!-- partial -->
+  
+</body>
+</html>

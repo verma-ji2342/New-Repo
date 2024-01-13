@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/7cb05e8337.js"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/login">Update </a></li>
+                    <li><a href="/course">COURSE</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT </a></li>
+                    <li><a href="/">REGISTER </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1 style="font-size: 50px;">About us</h1>
+    </section>
+    <!---about us content-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>It is because of the cumulative effect of an elaborate in-campus academic infrastructure; strong
+                    national and international collaborations; and a robust on-campus recruitment record—including
+                    regular recruitment by reputed blue-chip companies—that the University finds favor with national as
+                    well as international students.
+                    <br><br><br>The sprawling campus of the University is equidistant from Chandigarh, Mohali,
+                    Panchkula, Ambala and Patiala. The University offers multi-disciplinary programs, all of which are
+                    designed to be industry-relevant. As a result of this student-centric approach, Chitkara University
+                    is renowned as one of the best private universities in the North India region. From business
+                    management programs to programs in nursing and medical laboratory technologies; and from computer
+                    science, electronics and mechanical engineering programs, to hotel management and
+                    architecture—Chitkara University, Punjab is a veritable cornucopia of educational services.
+                    <br><br><br>A healthy number of foreign students regularly study at the campus and number of them
+                    also visit on exchange programs, adding to the cultural diversity found on campus. The University in
+                    Punjab provides several opportunities for local students, too, to visit foreign universities and
+                    institutions on such exchange programs, thereby helping them receive invaluable international
+                    exposure.
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="image/about.png">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Our logo depicts the arrows in soaring heights, promising everlasting progress. It also illustrates the
+            interlinking of our key<br> stakeholders namely Students, Parents, Faculty, Alumni, Industry and Society as
+            a whole,<br> working in synergy towards a common goal which is the “Everlasting Success of Each Chitkara
+            Student and creating them as responsible citizens”.<br> The colour Red denotes Energy & Passion to “Explore
+            Our Potential”.</p>
+        <br>
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i></p>
+
+
+    </section>
+
+
+
+
+
+    <!------JavaScript for toggle menu------>
+    <Script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </Script>
+
+</body>
+
+</html>

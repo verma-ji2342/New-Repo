@@ -1,0 +1,121 @@
+{{!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+
+<body> --}}
+    {{!-- {{>navbar}} --}}
+    {{!-- <div class="header">
+        <h2>Registeration Form</h2>
+    </div>
+    <div class="form">
+        <form action="/" method="post">
+            <input type="text" name="fname" id="fname" placeholder="First Name" value="">
+            <input type="text" id="lname" name="lname" placeholder="Last Name" value="">
+            <br>
+            <br>
+            <input type="email" id="gmail" name="gmail" value="" placeholder="Email">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="Female">Female</label>
+            <br>
+            <br>
+            <input type="number" id="phoneno" name="phoneno" value="" placeholder="Phone No.">
+            <input type="number" id="age" name="age" value="" placeholder="age">
+            <br>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Password" value="">
+            <input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password" value="">
+            <br>
+            <br>
+            <button type="submit" id="submit" value="register">Register</button>
+            <br>
+            <br>
+            <a href="http://localhost:4000/find">Find</a>
+            <br>
+            <br>
+            <a href="http://localhost:4000/update">Update</a>
+            <br>
+            <br>
+            <a href="http://localhost:4000/delete">Delete</a>
+            <br>
+            <br>
+            <a href="http://localhost:4000/login">login</a>
+        </form>
+    </div>
+</body>
+
+</html> --}}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <form action="/" action="/" method="post" class="form">
+            <div class="input-box">
+                <input type="text" name="fname" id="fname" placeholder="First Name" value="" required /> &nbsp &nbsp
+                <input type="text" id="lname" name="lname" placeholder="Last Name" value="" required />
+            </div>
+
+            <div class="input-box">
+                <input type="email" id="gmail" name="gmail" value="" placeholder="Enter your Email" required />
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <input type="number" id="phoneno" name="phoneno" value="" placeholder="Phone No." required /> &nbsp
+                    &nbsp
+                    <input type="number" id="age" name="age" value="" placeholder="age" required />
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="Male" checked />
+                        <label for="Male">male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="gender" value="Female" />
+                        <label for="Female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" name="password" placeholder="Password" value="" required /> &nbsp
+                &nbsp
+                <input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password" value=""
+                    required />
+            </div>
+            <div class="input-box">
+                <button type="submit" id="submit" value="register">Register</button>
+            </div>
+        </form>
+        <br>
+        <hr>
+        <br>
+        <div class="item">
+            <a href="/login"><div class="inner-item">Login</div></a>
+        </div>
+    </section>
+</body>
+
+</html>

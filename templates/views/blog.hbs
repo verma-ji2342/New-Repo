@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/7cb05e8337.js" ></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/login">Update </a></li>
+                    <li><a href="/course">COURSE</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT </a></li>
+                    <li><a href="/">REGISTER </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1 style="font-size: 35px;">Our Certificate & Online Programs for 2023</h1>
+        
+
+    </section>
+    <!---blog page content--->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left"> 
+                <img src="image/certificate.png">
+                <h2>Our Certificate & Online Programs For 2023</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nostrum fugit excepturi mollitia nam autem, exercitationem animi minima. Hic officiis veritatis temporibus ut, quisquam unde accusamus harum ea provident recusandae!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aperiam culpa sit officia accusantium fugit, eveniet, pariatur, odit in assumenda ipsum velit? Aliquid, facere! Repellendus illo minus ipsa tenetur nulla.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellat nihil modi molestias voluptates eveniet optio ab veritatis esse, praesentium dolore labore, sit at facilis explicabo amet a natus numquam.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae temporibus, eum sit iusto fuga soluta delectus nam iste, quae iure optio consectetur corrupti. Numquam minima illum maxime exercitationem enim.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name ">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea  rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>                       
+
+                </div>
+            </div>
+            <div class="blog-right"> 
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    
+
+    
+   
+
+   
+
+
+    
+    
+
+    
+
+
+<!--Footer-->
+<section class="footer">
+    <h1>About Us</h1>
+    <p>Our logo depicts the arrows in soaring heights, promising everlasting progress. It also illustrates the interlinking of our key<br> stakeholders namely Students, Parents, Faculty, Alumni, Industry and Society as a whole,<br> working in synergy towards a common goal which is the “Everlasting Success of Each Chitkara Student and creating them as responsible citizens”.<br> The colour Red denotes Energy & Passion to “Explore Our Potential”.</p>
+    <div class="icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i></p>
+
+
+</section>
+
+
+
+
+
+    <!------JavaScript for toggle menu------>
+    <Script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+
+    </Script>
+    
+</body>
+</html>

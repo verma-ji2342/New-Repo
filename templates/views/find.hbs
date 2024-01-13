@@ -1,0 +1,89 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        div{
+            border: 1px solid black;
+            text-align: center;
+            margin: auto;
+            margin-top: 40px;
+            padding: 50px;
+            width: 200px;
+            height: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        a{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FIND</h1>
+    <div>
+        <form action="/find" method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <br><br>
+            <input type="password" name="password" placeholder="password" required>
+            <br><br>
+            <input type="submit" id="submit" value="submit"> <a href="http://localhost:4000">register</a> 
+        </form>
+    </div>
+</body>
+</html> --}}
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Update Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="../css/passupdate.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+      <div class="text">
+         Find Client
+      </div>
+      <form action="/find" method="post">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="email" id="gmail" name="gmail" value="" required>
+               <div class="underline"></div>
+               <label for="">Email</label>
+            </div>
+            
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="password" id="password" name="password" required>
+               <div class="underline"></div>
+               <label for="">Password</label>
+            </div>
+            {{!-- <div class="input-data">
+               <input type="password" id="Cpassword" name="Cpassword" required>
+               <div class="underline"></div>
+               <label for="">Confirm Password</label>
+            </div> --}}
+         </div>
+         
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" id="submit" value="Save">
+               </div>
+            </div>
+      </form>
+      </div>
+<!-- partial -->
+  
+</body>
+</html>
