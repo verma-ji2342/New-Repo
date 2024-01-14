@@ -256,7 +256,7 @@ app.post("/find", auth, async(req, res) => {
         }
         else{
             
-            res.render("show", {
+            res.render("Show", {
                 fname: username.firstname,
                 lname: username.lastname,
                 age: username.age,
