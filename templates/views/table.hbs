@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update Form</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/7cb05e8337.js" ></script>
+    <style>
+        body{
+            background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+        }
+        .heading {
+            font-size: 2rem;
+            color: aliceblue;
+            font-weight: 600;
+            text-shadow: 2px 5px 10px rgb(19, 45, 67);
+        }
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        table {
+            width: 98vw;
+            margin: auto ;
+            height: auto;
+            font-size: 130%;
+        }
+        td {
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sub-header" style="background-image: none;">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/login">Update </a></li>
+                    <li><a href="/course">COURSE</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT </a></li>
+                    <li><a href="/">REGISTER </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <p class="heading">Student List</p>
+
+    </section>
+
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Phone No.</th>
+            <th>Age</th>
+            <th>Password</th>
+            <th>login Device </th>
+        </tr>
+        {{#each student}}
+        <tr>
+            <td>{{this.firstname}}</td>
+            <td>{{this.lastname}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.gender}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.age}}</td>
+            <td>{{this.confirmpassword}}</td>
+            <td>4</td>
+        </tr>
+        {{/each}}
+    </table>
+    <Script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+
+    </Script>
+</body>
+
+</html>

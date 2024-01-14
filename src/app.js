@@ -77,8 +77,9 @@ app.post("/login", async(req, res) => {
     try{
         const email = req.body.gmail;
         const pass = req.body.password;
-
-        // console.log(pass);
+        const owner = req.body.owner;
+        console.log("OWNER "+owner);
+            
         const username = await Register.findOne({email:email});
     
         const isMatch = await bcrypt.compare(pass, username.password);
@@ -94,7 +95,16 @@ app.post("/login", async(req, res) => {
 
         // console.log(isMatch);
         if(isMatch){
-            res.render("admin");
+
+            if(owner == 'admin'){
+                const table = await Register.find();
+                res.render("table", {
+                    student : table
+                })
+            }
+            else{
+                res.render("admin");
+            }
         }
         else{
             res.send("password is invalid");
@@ -256,7 +266,7 @@ app.post("/find", auth, async(req, res) => {
         }
         else{
             
-            res.render("show", {
+            res.render("Show", {
                 fname: username.firstname,
                 lname: username.lastname,
                 age: username.age,
@@ -358,6 +368,20 @@ app.get("/blog", async(req, res) => {
 app.get("/update", auth, async(req, res) => {
     res.render("admin");
 })
+
+
+// app.get("/showStudents", async(req, res) => {
+//     try{
+//         const table = await Register.find();
+//         res.render("table", {
+//             student : table
+//         })
+//     }catch(e){
+//         res.json({
+//             msg : "Something went wrong"
+//         })
+//     }
+// })
 
 
 app.listen(port ,()=>{
